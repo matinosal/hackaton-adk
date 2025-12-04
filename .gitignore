@@ -2,6 +2,7 @@ __pycache__
 .idx
 .venv
 .vscode
+myvenv
 myenv
 result
 agents/*/__private*

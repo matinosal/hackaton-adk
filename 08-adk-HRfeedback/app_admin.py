@@ -203,5 +203,5 @@ with gr.Blocks(title="HR Admin Dashboard", theme=gr.themes.Soft()) as demo:
             msg_analytics.submit(chat_analytics, [msg_analytics, chatbot_analytics], [chatbot_analytics, msg_analytics])
             btn_send_analytics.click(chat_analytics, [msg_analytics, chatbot_analytics], [chatbot_analytics, msg_analytics])
 
-# if __name__ == "__main__":
-#     demo.launch(server_port=7860)
+if __name__ == "__main__":
+    demo.launch(server_port=7860)
