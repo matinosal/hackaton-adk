@@ -41,6 +41,6 @@ def health_check():
 
 if __name__ == "__main__":
     import uvicorn
-    # Pobieramy port z env (dla Cloud Run) lub domyślnie 8080
-    port = int(os.environ.get("PORT", 8080))
-    uvicorn.run(app, host="0.0.0.0", port=port)
+    # Pobieramy port z env (dla Cloud Run) lub domyślnie 8000
+    port = int(os.environ.get("PORT", 8000))
+    app.run(app, host="0.0.0.0", port=port)

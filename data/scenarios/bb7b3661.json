@@ -1,0 +1,14 @@
+{
+  "candidate_name": "Edgar Heathcliff",
+  "context": "Rozmowa feedbackowa po negatywnej decyzji w rekrutacji na stanowisko Senior Backend Engineer, Experimentation Platform.",
+  "tone": "Profesjonalny, uprzejmy, nastawiony na zrozumienie perspektywy kandydata i zebranie konstruktywnego feedbacku.",
+  "key_questions": [
+    "W skali od 0 do 10, jak bardzo prawdopodobne jest, że poleciłby Pan/Pani udział w naszej rekrutacji znajomemu?",
+    "Czy był Pan/Pani na bieżąco informowany/a o statusie swojej aplikacji?",
+    "Czy osoby prowadzące rozmowy były Pana/Pani zdaniem dobrze przygotowane (czy znały Pana/Pani CV i profil)?",
+    "Co powinniśmy poprawić w przyszłych rekrutacjach?"
+  ],
+  "session_id": "bb7b3661",
+  "created_at": "2025-12-04 12:16:52",
+  "status": "GENERATED"
+}

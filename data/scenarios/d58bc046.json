@@ -1,0 +1,21 @@
+{
+  "candidate_name": "Jan Kowalski",
+  "context": "Rozmowa feedbackowa po zakończonym procesie rekrutacji na stanowisko Junior Java Developer.",
+  "tone": "Profesjonalny, uprzejmy, otwarty na konstruktywną krytykę.",
+  "key_questions": [
+    "W skali 0-10, jak bardzo prawdopodobne jest, że poleciłbyś udział w naszej rekrutacji znajomemu?",
+    "Czy zakres zadania rekrutacyjnego był adekwatny do stanowiska?",
+    "Czy czas potrzebny na wykonanie zadania był odpowiedni?",
+    "Czy otrzymałeś jakościowy feedback po zadaniu?",
+    "Czy byłeś na bieżąco informowany o statusie swojej aplikacji?",
+    "Czy informacje o wynagrodzeniu i benefitach były jasne od początku?",
+    "Czy czas oczekiwania na decyzję był akceptowalny?",
+    "Czy osoby rekrutujące były przygotowane do rozmowy (znały Twoje CV/profil)?",
+    "Czy pytania na różnych etapach były unikalne, czy się powtarzały?",
+    "Co w naszym procesie oceniasz jako mocną stronę?",
+    "Co powinniśmy poprawić w przyszłych rekrutacjach?"
+  ],
+  "session_id": "d58bc046",
+  "created_at": "2025-12-04 12:46:27",
+  "status": "GENERATED"
+}
