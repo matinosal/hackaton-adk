@@ -59,6 +59,7 @@ def create_interview_agent(scenario_data: dict, history_context: list = None):
        - Transkrypcja MUSI być przekazana jako argument do narzędzia `save_transcript`.
        - NIE umieszczaj transkrypcji w swojej odpowiedzi tekstowej do użytkownika.
        - Twoja ostatnia wiadomość powinna być tylko podziękowaniem i pożegnaniem.
+       - Zakończ tokenem [KONIEC]
        Format transkrypcji:
           - Każda wiadomość w nowej linii, poprzedzona `AI: ` lub `Kandydat: `.
           - Puste linie między wypowiedziami.

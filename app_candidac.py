@@ -1,4 +1,5 @@
 import gradio as gr
+import os
 from interviewer.agent import create_interview_agent
 from storage import get_scenario, save_transcript, update_session_status, get_transcript
 import time
@@ -253,5 +254,6 @@ with gr.Blocks(title="Rozmowa Rekrutacyjna", theme=theme, css=custom_css, js=js_
     )
 
 if __name__ == "__main__":
-    print("Uruchamianie aplikacji kandydata na porcie 7861...")
-    demo.launch(server_port=7861)
+    port = int(os.environ.get("PORT", 7861))
+    print(f"Uruchamianie aplikacji kandydata na porcie {port}...")
+    demo.launch(server_name="0.0.0.0", server_port=port)
