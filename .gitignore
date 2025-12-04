@@ -1,23 +1,18 @@
-__pycache__
-.idx
-.venv
-.vscode
-myenv
-result
-agents/*/__private*
-agents/*/.env
-agents/*/*/.env
-agents/*/*/*/.env
-agents/*/*/toolbox
-*/*.json
-*/*.pyc
-*/*.html
-requirements142.txt
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
 .env
-toolbox
-__private*/
-*/*/toolbox
-*evalset_result.json*
-*.html
-*.pdf
-*.zip
+
+# Data (Local storage)
+# data/
+# scenarios/
+# transcripts/
+
+# IDE
+.vscode/
+.idea/
+
+08-adk-HRfeedback/

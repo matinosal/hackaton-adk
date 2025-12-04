@@ -252,6 +252,6 @@ with gr.Blocks(title="Rozmowa Rekrutacyjna", theme=theme, css=custom_css, js=js_
         bot_turn, [chatbot, session_id_state, is_started_state], [chatbot, is_started_state, msg, btn_send]
     )
 
-# if __name__ == "__main__":
-#     print("Uruchamianie aplikacji kandydata na porcie 7861...")
-#     demo.launch(server_port=7861)
+if __name__ == "__main__":
+    print("Uruchamianie aplikacji kandydata na porcie 7861...")
+    demo.launch(server_port=7861)

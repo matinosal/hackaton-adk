@@ -6,6 +6,7 @@ from google.genai import types
 import json
 import re
 import os
+import pypdf
 
 from google.adk.runners import Runner
 from google.adk.sessions import InMemorySessionService
@@ -170,11 +171,17 @@ with gr.Blocks(title="HR Admin Dashboard", theme=gr.themes.Soft()) as demo:
             # Obsługa pliku
             def handle_file(file):
                 try:
-                    with open(file.name, 'r', encoding='utf-8') as f:
-                        content = f.read()
+                    if file.name.lower().endswith('.pdf'):
+                        reader = pypdf.PdfReader(file.name)
+                        content = ""
+                        for page in reader.pages:
+                            content += page.extract_text() + "\n"
+                    else:
+                        with open(file.name, 'r', encoding='utf-8') as f:
+                            content = f.read()
                     return f"Przesyłam plik z danymi kandydata:\n\n{content[:2000]}..." 
-                except:
-                    return "Błąd odczytu pliku."
+                except Exception as e:
+                    return f"Błąd odczytu pliku: {str(e)}"
             
             btn_upload.upload(handle_file, btn_upload, msg_setup)
             

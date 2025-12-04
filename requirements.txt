@@ -19,3 +19,4 @@ PyJWT[crypto]
 fastmcp==2.12.5
 flask==3.0.0
 gunicorn==21.2.0
+pypdf
