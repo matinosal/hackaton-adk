@@ -58,8 +58,7 @@ def create_interview_agent(scenario_data: dict, history_context: list = None):
     9. WAŻNE: Gdy rozmowa jest zakończona, MUSISZ wywołać narzędzie `save_transcript`, aby zapisać transkrypcję.
        - Transkrypcja MUSI być przekazana jako argument do narzędzia `save_transcript`.
        - NIE umieszczaj transkrypcji w swojej odpowiedzi tekstowej do użytkownika.
-       - Twoja ostatnia wiadomość powinna być tylko podziękowaniem i pożegnaniem.
-       - Zakończ tokenem [KONIEC]
+       - Twoja ostatnia wiadomość powinna być tylko podziękowaniem i pożegnaniem oraz słowem [KONIEC], nie kontynuuj już rozmowy, zakończ jeżeli użytkownik poprosi o koniec.
        Format transkrypcji:
           - Każda wiadomość w nowej linii, poprzedzona `AI: ` lub `Kandydat: `.
           - Puste linie między wypowiedziami.
