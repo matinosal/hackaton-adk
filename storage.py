@@ -167,3 +167,14 @@ def get_sessions_summary() -> list[list]:
     # Sortowanie od najnowszych
     sessions.sort(key=lambda x: x[3], reverse=True)
     return sessions
+
+def load_survey_text(filename: str = "SURVEY.txt") -> str:
+    """Wczytuje treść ankiety z pliku tekstowego."""
+    # SURVEY.txt znajduje się w głównym katalogu projektu (obok storage.py)
+    file_path = Path(__file__).parent / filename
+    
+    if not file_path.exists():
+        return ""
+        
+    with open(file_path, "r", encoding="utf-8") as f:
+        return f.read()
