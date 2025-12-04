@@ -1,5 +1,6 @@
 import gradio as gr
 from agents import create_setup_agent #, create_analytics_agent, MODEL
+from analyst.agent import create_analytic_agent
 
 from storage import save_scenario, get_all_transcripts, get_sessions_summary
 from google.adk.agents import Agent
@@ -113,8 +114,7 @@ async def chat_analytics(message, history):
 
     global analytics_agent
     
-    transcripts = get_all_transcripts()
-    # analytics_agent = create_analytics_agent(transcripts)
+    analytics_agent = create_analytic_agent()
     
     # Tworzymy tymczasowego runnera dla analityka
     analytics_runner = Runner(app_name="analytics_app", agent=analytics_agent, session_service=session_service, artifact_service=artifact_service)
@@ -201,15 +201,15 @@ with gr.Blocks(title="HR Admin Dashboard", theme=gr.themes.Soft()) as demo:
             )
             btn_refresh.click(refresh_sessions_list, None, sessions_table)
 
-        # # ZAKŁADKA 3: ANALITYKA
-        # with gr.TabItem("📊 Analityka"):
-        #     gr.Markdown("### Analiza zbiorcza")
-        #     chatbot_analytics = gr.Chatbot(height=600, type="messages")
-        #     msg_analytics = gr.Textbox(label="Pytanie do Analityka", placeholder="Jakie są najczęstsze powody odrzuceń?", lines=3)
-        #     btn_send_analytics = gr.Button("Zapytaj", variant="primary")
+        # ZAKŁADKA 3: ANALITYKA
+        with gr.TabItem("📊 Analityka"):
+            gr.Markdown("### Analiza zbiorcza")
+            chatbot_analytics = gr.Chatbot(height=600, type="messages")
+            msg_analytics = gr.Textbox(label="Pytanie do Analityka", placeholder="Jakie są najczęstsze powody odrzuceń?", lines=3)
+            btn_send_analytics = gr.Button("Zapytaj", variant="primary")
             
-        #     msg_analytics.submit(chat_analytics, [msg_analytics, chatbot_analytics], [chatbot_analytics, msg_analytics])
-        #     btn_send_analytics.click(chat_analytics, [msg_analytics, chatbot_analytics], [chatbot_analytics, msg_analytics])
+            msg_analytics.submit(chat_analytics, [msg_analytics, chatbot_analytics], [chatbot_analytics, msg_analytics])
+            btn_send_analytics.click(chat_analytics, [msg_analytics, chatbot_analytics], [chatbot_analytics, msg_analytics])
 
 if __name__ == "__main__":
     demo.launch(server_port=7860)

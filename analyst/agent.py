@@ -102,20 +102,23 @@ Poniżej znajduje się przykładowa struktura JSON, z którą będziesz pracowa�
 
 SEARCH_ENGINE_ID = os.getenv('SEARCH_ENGINE_ID')
 SEARCH_DATASTORE_ID = os.getenv('SEARCH_DATASTORE_ID')
-MODEL = "gemini-3-pro-preview"
+MODEL = "gemini-2.0-flash-001"
 AGENT_APP_NAME = 'analyst_agent'
 
-privatecorpus = VertexAiSearchTool(
-    search_engine_id = SEARCH_ENGINE_ID,
-    max_results = 10
-)
 
-root_agent = Agent(
-        model=MODEL,
-        name=AGENT_APP_NAME,
-        description="You are RAG expert",
-        instruction=instruction_prompt,
-        tools=[
-            privatecorpus
-        ]
-)
+def create_analytic_agent():
+  privatecorpus = VertexAiSearchTool(
+      search_engine_id = SEARCH_ENGINE_ID,
+      max_results = 10
+  )
+
+  root_agent = Agent(
+          model=MODEL,
+          name=AGENT_APP_NAME,
+          description="You are RAG expert",
+          instruction=instruction_prompt,
+          tools=[
+              privatecorpus
+          ]
+  )
+  return root_agent
