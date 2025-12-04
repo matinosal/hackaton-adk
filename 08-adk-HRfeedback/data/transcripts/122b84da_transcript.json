@@ -1,0 +1,20 @@
+{
+  "session_id": "122b84da",
+  "updated_at": "2025-12-02 17:05:25",
+  "history": [
+    {
+      "role": "assistant",
+      "metadata": null,
+      "content": "👋 **Witaj!**\n\nDziękujemy za poświęcony czas. Chcielibyśmy poznać Twoją opinię o procesie rekrutacji.\nRozmowa jest prowadzona przez automatycznego asystenta AI.\n\n🔒 **Poufność:**\nWszystkie informacje, które podasz, są zapisywane i będą analizowane przez nasz dział HR w celu poprawy jakości rekrutacji.\nJeśli nie wyrażasz zgody na przetwarzanie tej rozmowy, po prostu zamknij to okno.\n\nAby rozpocząć, napisz \"Cześć\" lub odpowiedz na pierwsze pytanie, jeśli się pojawi.",
+      "options": null
+    },
+    {
+      "role": "user",
+      "content": "cześć..."
+    },
+    {
+      "role": "assistant",
+      "content": "Dzień dobry Panie Janie, z tej strony [Twoje imię i nazwisko] z działu HR firmy [Nazwa firmy]. Dzwonię w sprawie zebrania opinii na temat Pana doświadczeń związanych z procesem rekrutacyjnym na stanowisko Junior Java Developer. Czy ma Pan chwilę, żeby porozmawiać?"
+    }
+  ]
+}

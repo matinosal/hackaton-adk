@@ -1,0 +1,44 @@
+{
+  "session_id": "8d890912",
+  "updated_at": "2025-12-03 11:19:06",
+  "history": [
+    {
+      "role": "assistant",
+      "metadata": null,
+      "content": "👋 **Witaj!**\n\nDziękujemy za poświęcony czas. Chcielibyśmy poznać Twoją opinię o procesie rekrutacji.\nRozmowa jest prowadzona przez automatycznego asystenta AI.\n\n🔒 **Poufność:**\nWszystkie informacje, które podasz, są zapisywane i będą analizowane przez nasz dział HR w celu poprawy jakości rekrutacji.\nJeśli nie wyrażasz zgody na przetwarzanie tej rozmowy, po prostu zamknij to okno.\n\nAby rozpocząć, napisz \"Cześć\" lub odpowiedz na pierwsze pytanie, jeśli się pojawi.",
+      "options": null
+    },
+    {
+      "role": "user",
+      "metadata": null,
+      "content": "hej",
+      "options": null
+    },
+    {
+      "role": "assistant",
+      "metadata": null,
+      "content": "Dzień dobry, [Imię i Nazwisko Kandydata]. Dziękuję za poświęcony czas na rozmowę. Jakie są Pana/Pani ogólne wrażenia z procesu rekrutacji?",
+      "options": null
+    },
+    {
+      "role": "user",
+      "metadata": null,
+      "content": "dobre",
+      "options": null
+    },
+    {
+      "role": "assistant",
+      "metadata": null,
+      "content": "Rozumiem. Czy jest coś w procesie rekrutacji, co wydało się Panu/Pani niejasne lub problematyczne?",
+      "options": null
+    },
+    {
+      "role": "user",
+      "content": "konczę rozmowe\n"
+    },
+    {
+      "role": "assistant",
+      "content": "Dobrze, dziękuję bardzo za poświęcony czas i podzielenie się opinią. Doceniamy to. Życzę powodzenia w dalszych poszukiwaniach pracy."
+    }
+  ]
+}

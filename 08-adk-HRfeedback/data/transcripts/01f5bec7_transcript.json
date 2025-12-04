@@ -1,0 +1,154 @@
+{
+  "session_id": "01f5bec7",
+  "updated_at": "2025-12-03 13:15:01",
+  "history": [
+    {
+      "role": "assistant",
+      "metadata": null,
+      "content": "👋 **Witaj!**\n\nDziękujemy za poświęcony czas. Chcielibyśmy poznać Twoją opinię o procesie rekrutacji.\nRozmowa jest prowadzona przez automatycznego asystenta AI.\n\n🔒 **Poufność:**\nWszystkie informacje, które podasz, są zapisywane i będą analizowane przez nasz dział HR w celu poprawy jakości rekrutacji.\nJeśli nie wyrażasz zgody na przetwarzanie tej rozmowy, po prostu zamknij to okno.\n\nAby rozpocząć, napisz \"Cześć\" lub odpowiedz na pierwsze pytanie, jeśli się pojawi.",
+      "options": null
+    },
+    {
+      "role": "user",
+      "metadata": null,
+      "content": "hejka",
+      "options": null
+    },
+    {
+      "role": "assistant",
+      "metadata": null,
+      "content": "Dzień dobry Panie Janie. Dzwonię z działu HR w sprawie feedbacku dotyczącego Pana udziału w procesie rekrutacji na stanowisko [Nazwa Stanowiska]. Rozumiem, że otrzymał Pan już informację o wyniku rekrutacji. Chcielibyśmy zebrać Pana opinię, aby ulepszyć nasze przyszłe procesy. Czy ma Pan kilka minut na krótką rozmowę?",
+      "options": null
+    },
+    {
+      "role": "user",
+      "metadata": null,
+      "content": "tak mam",
+      "options": null
+    },
+    {
+      "role": "assistant",
+      "metadata": null,
+      "content": "Świetnie. Na początek, jakie są Pana ogólne wrażenia z całego procesu rekrutacji?",
+      "options": null
+    },
+    {
+      "role": "user",
+      "metadata": null,
+      "content": "5/5",
+      "options": null
+    },
+    {
+      "role": "assistant",
+      "metadata": null,
+      "content": "Rozumiem, że ocenia Pan proces pozytywnie. Czy w takim razie cokolwiek w procesie było dla Pana niejasne lub problematyczne?",
+      "options": null
+    },
+    {
+      "role": "user",
+      "metadata": null,
+      "content": "nic",
+      "options": null
+    },
+    {
+      "role": "assistant",
+      "metadata": null,
+      "content": "Dobrze. Czy ma Pan jakieś sugestie dotyczące usprawnień naszego procesu rekrutacji?",
+      "options": null
+    },
+    {
+      "role": "user",
+      "metadata": null,
+      "content": "nie dzięki",
+      "options": null
+    },
+    {
+      "role": "assistant",
+      "metadata": null,
+      "content": "Rozumiem. Na koniec, w skali od 1 do 5, jak ocenia Pan przebieg samej rozmowy rekrutacyjnej?",
+      "options": null
+    },
+    {
+      "role": "user",
+      "metadata": null,
+      "content": "hej",
+      "options": null
+    },
+    {
+      "role": "assistant",
+      "metadata": null,
+      "content": "Dzień dobry Panie Janie. Dzwonię z działu HR w sprawie feedbacku dotyczącego Pana udziału w procesie rekrutacji. Czy ma Pan chwilę, żeby porozmawiać?",
+      "options": null
+    },
+    {
+      "role": "user",
+      "metadata": null,
+      "content": "ffff",
+      "options": null
+    },
+    {
+      "role": "assistant",
+      "metadata": null,
+      "content": "Rozumiem, że teraz nie jest dobry moment. Czy moglibyśmy porozmawiać w innym terminie? Ewentualnie, czy preferuje Pan inną formę przekazania opinii, na przykład mailowo?",
+      "options": null
+    },
+    {
+      "role": "user",
+      "metadata": null,
+      "content": "suabo",
+      "options": null
+    },
+    {
+      "role": "assistant",
+      "metadata": null,
+      "content": "Świetnie. Na początek, jakie są Pana ogólne wrażenia z całego procesu rekrutacji?",
+      "options": null
+    },
+    {
+      "role": "user",
+      "metadata": null,
+      "content": "siemka",
+      "options": null
+    },
+    {
+      "role": "assistant",
+      "metadata": null,
+      "content": "Dzień dobry Panie Janie, dziękuję za poświęcony czas na tę rozmowę. Chciałbym zebrać od Pana feedback na temat procesu rekrutacji, w którym Pan uczestniczył.\n\nNa początek, jakie są Pana ogólne wrażenia z procesu rekrutacji? [CZEKAM_NA_ODPOWIEDŹ]",
+      "options": null
+    },
+    {
+      "role": "user",
+      "metadata": null,
+      "content": "po co piszesz ze czekasz xD?",
+      "options": null
+    },
+    {
+      "role": "assistant",
+      "metadata": null,
+      "content": "Przepraszam za to sformułowanie, to był błąd z mojej strony. Po prostu chcę dać Panu przestrzeń na odpowiedź.\n\nWracając do pytania, jakie są Pana ogólne wrażenia z procesu rekrutacji? [CZEKAM_NA_ODPOWIEDŹ]",
+      "options": null
+    },
+    {
+      "role": "user",
+      "metadata": null,
+      "content": "hej",
+      "options": null
+    },
+    {
+      "role": "assistant",
+      "metadata": null,
+      "content": "Dzień dobry Panie Janie, dziękuję za poświęcony czas na tę krótką rozmowę. Chciałbym zebrać od Pana feedback na temat procesu rekrutacji, w którym Pan uczestniczył.\n\nNa początek, jakie są Pana ogólne wrażenia z całego procesu rekrutacji? [CZEKAM_NA_ODPOWIEDŹ]",
+      "options": null
+    },
+    {
+      "role": "user",
+      "metadata": null,
+      "content": "wyłcz rozmowe skonczylismy juz",
+      "options": null
+    },
+    {
+      "role": "assistant",
+      "content": "Rozumiem. Dziękuję bardzo za Pana czas i podzielenie się opinią. Jest to dla nas bardzo wartościowe."
+    }
+  ]
+}

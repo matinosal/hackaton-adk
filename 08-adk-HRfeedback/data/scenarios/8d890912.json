@@ -1,0 +1,13 @@
+{
+  "candidate_name": "Imię i Nazwisko Kandydata",
+  "context": "Rozmowa feedbackowa po negatywnej decyzji rekrutacyjnej. Ton neutralny.",
+  "tone": "neutralny",
+  "key_questions": [
+    "Jakie są Pana/Pani ogólne wrażenia z procesu rekrutacji?",
+    "Czy coś w procesie było niejasne lub problematyczne?",
+    "Czy ma Pan/Pani jakieś sugestie dotyczące usprawnień procesu rekrutacji?"
+  ],
+  "session_id": "8d890912",
+  "created_at": "2025-12-03 11:17:18",
+  "status": "COMPLETED"
+}

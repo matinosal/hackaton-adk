@@ -1,0 +1,32 @@
+{
+  "session_id": "532f91e1",
+  "updated_at": "2025-12-02 17:23:37",
+  "history": [
+    {
+      "role": "assistant",
+      "metadata": null,
+      "content": "👋 **Witaj!**\n\nDziękujemy za poświęcony czas. Chcielibyśmy poznać Twoją opinię o procesie rekrutacji.\nRozmowa jest prowadzona przez automatycznego asystenta AI.\n\n🔒 **Poufność:**\nWszystkie informacje, które podasz, są zapisywane i będą analizowane przez nasz dział HR w celu poprawy jakości rekrutacji.\nJeśli nie wyrażasz zgody na przetwarzanie tej rozmowy, po prostu zamknij to okno.\n\nAby rozpocząć, napisz \"Cześć\" lub odpowiedz na pierwsze pytanie, jeśli się pojawi.",
+      "options": null
+    },
+    {
+      "role": "user",
+      "metadata": null,
+      "content": "hej",
+      "options": null
+    },
+    {
+      "role": "assistant",
+      "metadata": null,
+      "content": "Dzień dobry Panie Janie, z tej strony [Twoje Imię i Nazwisko] z działu HR. Dzwonię, żeby zebrać od Pana feedback na temat rozmowy rekrutacyjnej na stanowisko Młodszego Specjalisty ds. Marketingu. Czy ma Pan chwilę, żeby porozmawiać?",
+      "options": null
+    },
+    {
+      "role": "user",
+      "content": "konczymy rozmowe nie chce jej\n"
+    },
+    {
+      "role": "assistant",
+      "content": "Rozumiem. Dziękuję bardzo za poświęcony czas i informację. W takim razie nie będę Pana dłużej zatrzymywać."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "candidate_name": "Jan Kowalski",
+  "context": "Rozmowa feedbackowa po negatywnej decyzji rekrutacyjnej. Ton neutralny.",
+  "tone": "neutralny",
+  "key_questions": [
+    "Jakie są Pana/Pani ogólne wrażenia z procesu rekrutacji?",
+    "Czy coś w procesie było niejasne lub problematyczne?",
+    "Czy ma Pan/Pani jakieś sugestie dotyczące usprawnień procesu rekrutacji?",
+    "W skali od 1 do 5, jak ocenia Pan/Pani przebieg rozmowy rekrutacyjnej?"
+  ],
+  "session_id": "1f518253",
+  "created_at": "2025-12-03 11:32:14",
+  "status": "GENERATED"
+}
