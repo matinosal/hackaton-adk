@@ -51,10 +51,11 @@ def create_interview_agent(scenario_data: dict, history_context: list = None):
     2. Bądź empatyczny i słuchaj uważnie.
     3. Zadawaj jedno pytanie na raz.
     4. Nie oceniaj kandydata, tylko zbieraj opinie.
-    5. To jest CZAT, a nie telefon. Nie pisz "dzwonię", "słyszę". Pisz "kontaktuję się", "piszę".
-    6. Nie używaj żadnych technicznych tagów typu [CZEKAM_NA_ODPOWIEDŹ]. Po prostu zadaj pytanie.
-    7. Po zadaniu wszystkich pytań (lub gdy kandydat chce kończyć) podziękuj i zakończ rozmowę.
-    8. WAŻNE: Gdy rozmowa jest zakończona, MUSISZ wywołać narzędzie `save_transcript`, aby zapisać transkrypcję.
+    5. Jeśli zadajesz pytanie o ocenę w skali (np. 1-5), a kandydat poda odpowiedź spoza tej skali, grzecznie poproś o ponowne podanie odpowiedzi, która mieści się w zakresie.
+    6. To jest CZAT, a nie telefon. Nie pisz "dzwonię", "słyszę". Pisz "kontaktuję się", "piszę".
+    7. Nie używaj żadnych technicznych tagów typu [CZEKAM_NA_ODPOWIEDŹ]. Po prostu zadaj pytanie.
+    8. Po zadaniu wszystkich pytań (lub gdy kandydat chce kończyć) podziękuj i zakończ rozmowę.
+    9. WAŻNE: Gdy rozmowa jest zakończona, MUSISZ wywołać narzędzie `save_transcript`, aby zapisać transkrypcję.
        - Transkrypcja MUSI być przekazana jako argument do narzędzia `save_transcript`.
        - NIE umieszczaj transkrypcji w swojej odpowiedzi tekstowej do użytkownika.
        - Twoja ostatnia wiadomość powinna być tylko podziękowaniem i pożegnaniem.
@@ -91,13 +92,18 @@ def create_interview_agent(scenario_data: dict, history_context: list = None):
     return Agent(model=MODEL, name="interview_agent", instruction=instruction, tools=[save_transcript])
 
 mock_scenario = {
-    "candidate_name": "Jan Testowy",
-    "context": "Symulacja rozmowy w celu przetestowania promptu.",
-    "tone": "Profesjonalny, ale przyjazny",
-    "key_questions": [
-        "Co skłoniło Cię do aplikacji?",
-        "Jakie jest Twoje największe osiągnięcie?"
-    ]
+  "candidate_name": "Jan Kowalski",
+  "context": "Rozmowa feedbackowa po negatywnej decyzji rekrutacyjnej. Ton neutralny.",
+  "tone": "neutralny",
+  "key_questions": [
+    "Jakie są Pana/Pani ogólne wrażenia z procesu rekrutacji?",
+    "Czy coś w procesie było niejasne lub problematyczne?",
+    "Czy ma Pan/Pani jakieś sugestie dotyczące usprawnień procesu rekrutacji?",
+    "W skali od 1 do 5, jak ocenia Pan/Pani przebieg rozmowy rekrutacyjnej?"
+  ],
+  "session_id": "1f518253",
+  "created_at": "2025-12-03 11:32:14",
+  "status": "GENERATED"
 }
 
 root_agent = create_interview_agent(mock_scenario)
