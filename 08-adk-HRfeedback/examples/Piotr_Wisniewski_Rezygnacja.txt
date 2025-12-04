@@ -1,0 +1,14 @@
+KANDYDAT: Piotr Wiśniewski
+STANOWISKO: DevOps Engineer
+STATUS: Rezygnacja Kandydata (Po ofercie)
+
+NOTATKI Z REKRUTACJI:
+- Kompetencje: Bardzo wysokie (Kubernetes, Terraform, AWS).
+- Oferta: Złożyliśmy ofertę 25k PLN B2B.
+- Decyzja: Piotr odrzucił ofertę.
+
+POWÓD REZYGNACJI (Z maila):
+"Dziękuję za ofertę, ale konkurencja zaproponowała 30k. Poza tym Wasz proces trwał 4 etapy (ponad miesiąc), co było dla mnie trochę męczące."
+
+CEL ROZMOWY FEEDBACKOWEJ:
+To trudna rozmowa. Chcemy dowiedzieć się, który etap był "zbędny" w jego oczach. Czy gdybyśmy dali 30k, to by został, czy długość procesu była decydująca? Bądź bardzo delikatny, nie chcemy palić mostów.
