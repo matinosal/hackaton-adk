@@ -1,22 +1,32 @@
 from google.adk.agents.llm_agent import Agent
 import datetime
 import os
+from .gcs_service import GCSService
+from dotenv import load_dotenv
+
+load_dotenv()
 
 MODEL = "gemini-3-pro-preview"
 
 def save_transcript(transcript: str):
-    """Zapisuje transkrypcję rozmowy do pliku.
+    """Zapisuje transkrypcję rozmowy do pliku w Google Cloud Storage.
     
     Args:
         transcript: Pełna treść rozmowy do zapisania.
     """
-    directory = "transcripts"
-    os.makedirs(directory, exist_ok=True)
-    filename = f"transcript_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
-    filepath = os.path.join(directory, filename)
-    with open(filepath, "w", encoding="utf-8") as f:
-        f.write(transcript)
-    return f"Zapisano transkrypcję do pliku: {filepath}"
+    bucket_name = os.getenv("GCS_BUCKET_NAME")
+    if not bucket_name:
+        return "Błąd: Zmienna środowiskowa GCS_BUCKET_NAME nie jest ustawiona."
+
+    try:
+        gcs_service = GCSService(bucket_name=bucket_name)
+        filename = f"transcript_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
+        gcs_path = gcs_service.upload_string(transcript, filename, content_type="text/plain; charset=utf-8")
+        return f"Zapisano transkrypcję do: {gcs_path}"
+    except Exception as e:
+        error_message = f"Błąd podczas zapisu do GCS: {e}"
+        print(error_message)
+        return error_message
 
 def create_interview_agent(scenario_data: dict, history_context: list = None):
     candidate_name = scenario_data.get("candidate_name", "Kandydacie")
