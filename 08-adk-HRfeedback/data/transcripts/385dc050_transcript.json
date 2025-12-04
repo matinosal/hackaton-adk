@@ -1,0 +1,128 @@
+{
+  "session_id": "385dc050",
+  "updated_at": "2025-12-02 15:43:49",
+  "history": [
+    {
+      "role": "assistant",
+      "metadata": null,
+      "content": "👋 **Witaj!**\n\nDziękujemy za poświęcony czas. Chcielibyśmy poznać Twoją opinię o procesie rekrutacji.\nRozmowa jest prowadzona przez automatycznego asystenta AI.\n\n🔒 **Poufność:**\nWszystkie informacje, które podasz, są zapisywane i będą analizowane przez nasz dział HR w celu poprawy jakości rekrutacji.\nJeśli nie wyrażasz zgody na przetwarzanie tej rozmowy, po prostu zamknij to okno.\n\nAby rozpocząć, napisz \"Cześć\" lub odpowiedz na pierwsze pytanie, jeśli się pojawi.",
+      "options": null
+    },
+    {
+      "role": "user",
+      "metadata": null,
+      "content": "Cześć",
+      "options": null
+    },
+    {
+      "role": "assistant",
+      "metadata": null,
+      "content": "Dzień dobry, Marku! Z tej strony [Twoje imię] z działu HR [Nazwa firmy]. Dzwonię w sprawie Twojego udziału w rekrutacji na stanowisko Junior Java Developera. Chcieliśmy zebrać od Ciebie feedback na temat procesu rekrutacji, szczególnie etapu z zadaniem SQL. Czy masz teraz chwilę, żeby o tym porozmawiać?",
+      "options": null
+    },
+    {
+      "role": "user",
+      "metadata": null,
+      "content": "tak",
+      "options": null
+    },
+    {
+      "role": "assistant",
+      "metadata": null,
+      "content": "Świetnie. Na początek, powiedz proszę, jakie są Twoje ogólne wrażenia z całego procesu rekrutacji?",
+      "options": null
+    },
+    {
+      "role": "user",
+      "metadata": null,
+      "content": "3/5",
+      "options": null
+    },
+    {
+      "role": "assistant",
+      "metadata": null,
+      "content": "Rozumiem. A czy jest coś konkretnego, co szczególnie Ci się podobało lub nie podobało w procesie rekrutacji? Co wpłynęło na taką ocenę?",
+      "options": null
+    },
+    {
+      "role": "user",
+      "metadata": null,
+      "content": "dość noramlana rozmowa, wydaje mi sie że nic nie zawiodło, jednyne szkoda że sie nie dostałem",
+      "options": null
+    },
+    {
+      "role": "assistant",
+      "metadata": null,
+      "content": "Dziękuję za tę informację. Rozumiem, że rozczarowanie wynikiem jest naturalne. Przejdźmy zatem do zadania z SQL. Jakie były Twoje odczucia po jego otrzymaniu? Czy coś Cię zaskoczyło?",
+      "options": null
+    },
+    {
+      "role": "user",
+      "metadata": null,
+      "content": "No łatwy był więc serio nie rozumie dlaczego nie wzieliście mnie ;_; przecieć wydaje sie ze wszystko dobrze, jeszcze słabo że wynik jest anonimowy",
+      "options": null
+    },
+    {
+      "role": "assistant",
+      "metadata": null,
+      "content": "Rozumiem Twoje rozczarowanie i chęć poznania szczegółów. Niestety, ze względu na politykę firmy, nie możemy udostępniać szczegółowych wyników.\n\nSkupiając się na zadaniu - wspomniałeś, że wydawało się łatwe. Czy polecenie w zadaniu SQL było dla Ciebie jasne i zrozumiałe?",
+      "options": null
+    },
+    {
+      "role": "user",
+      "metadata": null,
+      "content": "no tak",
+      "options": null
+    },
+    {
+      "role": "assistant",
+      "metadata": null,
+      "content": "Dobrze. A czy w trakcie rozwiązywania zadania SQL poczułeś się w którymś momencie szczególnie zagubiony? Był jakiś konkretny powód takiego stanu?",
+      "options": null
+    },
+    {
+      "role": "user",
+      "metadata": null,
+      "content": "nope",
+      "options": null
+    },
+    {
+      "role": "assistant",
+      "metadata": null,
+      "content": "Rozumiem. A czy stres związany z presją czasu wpłynął jakoś na Twój wynik w zadaniu SQL? Czy czułeś, że miałeś wystarczająco czasu na jego rozwiązanie?",
+      "options": null
+    },
+    {
+      "role": "user",
+      "metadata": null,
+      "content": "no mówię że easy i nie stres, ehh nie rozumiesz mnie , kończę",
+      "options": null
+    },
+    {
+      "role": "assistant",
+      "metadata": null,
+      "content": "Dobrze, Marku. Dziękuję bardzo za poświęcony czas i podzielenie się swoimi spostrzeżeniami. Szanuję Twoją decyzję o zakończeniu rozmowy. Jeszcze raz dziękuję i życzę powodzenia w dalszych poszukiwaniach pracy.",
+      "options": null
+    },
+    {
+      "role": "user",
+      "metadata": null,
+      "content": "",
+      "options": null
+    },
+    {
+      "role": "assistant",
+      "metadata": null,
+      "content": "Rozumiem, nie będę kontynuować.",
+      "options": null
+    },
+    {
+      "role": "user",
+      "content": ""
+    },
+    {
+      "role": "assistant",
+      "content": "Przepraszam, ale rozmowa została zakończona na prośbę Marka. Nie będę kontynuować."
+    }
+  ]
+}

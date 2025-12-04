@@ -7,9 +7,9 @@ venv/
 .env
 
 # Data (Local storage)
-data/
-scenarios/
-transcripts/
+# data/
+# scenarios/
+# transcripts/
 
 # IDE
 .vscode/
