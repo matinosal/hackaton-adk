@@ -1,0 +1,14 @@
+KANDYDATKA: Anna Nowak
+STANOWISKO: Senior Java Developer
+STATUS: Zatrudniona (Startuje 1 grudnia)
+
+NOTATKI Z REKRUTACJI:
+- CV: 10 lat doświadczenia, ex-Google, ex-Spotify.
+- Rozmowa Techniczna: Perfekcyjna. Rozwiązała problem architektury mikroserwisów w 15 minut.
+- Culture Fit: Bardzo pasuje do zespołu. Liderka.
+
+UWAGI REKRUTERA:
+Proces przebiegł błyskawicznie (3 dni od CV do oferty). Anna wspomniała, że wybrała nas ze względu na szybkość decyzji, mimo że inna firma dawała nieco więcej pieniędzy.
+
+CEL ROZMOWY FEEDBACKOWEJ:
+Potwierdzić, co było kluczowym czynnikiem decyzji ("Szybkość procesu"?). Chcemy to wykorzystać w marketingu rekrutacyjnym. Zapytać, czy onboarding (przesyłanie dokumentów) był wygodny.

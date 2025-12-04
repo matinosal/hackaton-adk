@@ -1,0 +1,17 @@
+KANDYDAT: Marek Kowalski
+STANOWISKO: Junior Java Developer
+STATUS: Odrzucony (Etap Techniczny)
+
+NOTATKI Z REKRUTACJI:
+- Rozmowa HR: Bardzo pozytywna. Kandydat komunikatywny, świetny angielski (C1).
+- Zadanie Techniczne (Live Coding):
+  - Java Core: Dobrze (4/5). Zna podstawy OOP i kolekcji.
+  - SQL: Słabo (1/5). Nie potrafił napisać zapytania z LEFT JOIN.
+  - Frameworki: Zna podstawy Spring Boota.
+
+UWAGI REKRUTERA:
+Marek był wyraźnie zdenerwowany podczas zadania z SQL. Skomentował, że "polecenie jest niejasne i nie wie, o którą tabelę chodzi".
+Mimo odrzucenia, warto zachować kontakt na przyszłość (np. na staż), bo ma potencjał miękki.
+
+CEL ROZMOWY FEEDBACKOWEJ:
+Dowiedzieć się, co dokładnie było niejasne w zadaniu SQL. Czy stres wynikał z presji czasu czy z naszej winy?
