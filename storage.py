@@ -4,6 +4,10 @@ import uuid
 from pathlib import Path
 from datetime import datetime
 
+from dotenv import load_dotenv
+load_dotenv()
+
+
 # Konfiguracja trybu (LOCAL lub GCS)
 STORAGE_MODE = os.getenv("STORAGE_MODE", "LOCAL") # Domyślnie lokalnie
 BUCKET_NAME = os.getenv("BUCKET_NAME", "adk-hr-feedback-data")
