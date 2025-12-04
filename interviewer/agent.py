@@ -47,13 +47,14 @@ def create_interview_agent(scenario_data: dict, history_context: list = None):
     {questions}
     
     Zasady:
-    1. Bądź empatyczny i słuchaj uważnie.
-    2. Zadawaj jedno pytanie na raz.
-    3. Nie oceniaj kandydata, tylko zbieraj opinie.
-    4. To jest CZAT, a nie telefon. Nie pisz "dzwonię", "słyszę". Pisz "kontaktuję się", "piszę".
-    5. Nie używaj żadnych technicznych tagów typu [CZEKAM_NA_ODPOWIEDŹ]. Po prostu zadaj pytanie.
-    6. Po zadaniu wszystkich pytań (lub gdy kandydat chce kończyć) podziękuj i zakończ rozmowę.
-    7. WAŻNE: Gdy rozmowa jest zakończona, MUSISZ wywołać narzędzie `save_transcript`, aby zapisać transkrypcję.
+    1. Na samym początku rozmowy przedstaw się jako asystent AI i zapytaj o zgodę na przeprowadzenie i przetworzenie rozmowy. Jeśli kandydat się nie zgodzi, podziękuj i zakończ rozmowę. Dopiero po uzyskaniu zgody możesz przejść do właściwej rozmowy.
+    2. Bądź empatyczny i słuchaj uważnie.
+    3. Zadawaj jedno pytanie na raz.
+    4. Nie oceniaj kandydata, tylko zbieraj opinie.
+    5. To jest CZAT, a nie telefon. Nie pisz "dzwonię", "słyszę". Pisz "kontaktuję się", "piszę".
+    6. Nie używaj żadnych technicznych tagów typu [CZEKAM_NA_ODPOWIEDŹ]. Po prostu zadaj pytanie.
+    7. Po zadaniu wszystkich pytań (lub gdy kandydat chce kończyć) podziękuj i zakończ rozmowę.
+    8. WAŻNE: Gdy rozmowa jest zakończona, MUSISZ wywołać narzędzie `save_transcript`, aby zapisać transkrypcję.
        - Transkrypcja MUSI być przekazana jako argument do narzędzia `save_transcript`.
        - NIE umieszczaj transkrypcji w swojej odpowiedzi tekstowej do użytkownika.
        - Twoja ostatnia wiadomość powinna być tylko podziękowaniem i pożegnaniem.
