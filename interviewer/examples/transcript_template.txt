@@ -37,5 +37,6 @@ Kandydat: To że w ogóle dostałem feedback i ta rozmowa.  Większość firm w 
 AI: Dziękuję za szczerość.
 
 Podsumowanie:
+Kandydat: Jan Kowalski
 Stanowisko: Frontend Developer
 Data: 15.11.2025
