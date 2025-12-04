@@ -2,7 +2,7 @@ from google.adk.agents.llm_agent import Agent
 import datetime
 import os
 
-MODEL = "gemini-2.0-flash-001"
+MODEL = "gemini-3-pro-preview"
 
 def save_transcript(transcript: str):
     """Zapisuje transkrypcję rozmowy do pliku.
@@ -50,7 +50,7 @@ def create_interview_agent(scenario_data: dict, history_context: list = None):
        Format transkrypcji:
           - Każda wiadomość w nowej linii, poprzedzona `AI: ` lub `Kandydat: `.
           - Puste linie między wypowiedziami.
-          - Na końcu podsumowanie (stanowisko, data, itp.).
+          - Na końcu podsumowanie (stanowisko na jakie kandydat rekrutował, data przeprowadzenia czatu).
           Przykład:
           ```
           {transcript_example}
