@@ -24,6 +24,9 @@ def create_interview_agent(scenario_data: dict, history_context: list = None):
     tone = scenario_data.get("tone", "neutralny")
     questions = "\n".join([f"- {q}" for q in scenario_data.get("key_questions", [])])
 
+    with open(os.path.join(os.path.dirname(__file__), 'examples', 'transcript_template.txt'), 'r', encoding='utf-8') as f:
+        transcript_example = f.read()
+
     instruction = f"""
     Jesteś pracownikiem HR zbierającym feedback o procesie rekrutacji.
     Prowadzisz CZAT TEKSTOWY z kandydatem: {candidate_name}.
@@ -40,9 +43,18 @@ def create_interview_agent(scenario_data: dict, history_context: list = None):
     4. To jest CZAT, a nie telefon. Nie pisz "dzwonię", "słyszę". Pisz "kontaktuję się", "piszę".
     5. Nie używaj żadnych technicznych tagów typu [CZEKAM_NA_ODPOWIEDŹ]. Po prostu zadaj pytanie.
     6. Po zadaniu wszystkich pytań (lub gdy kandydat chce kończyć) podziękuj i zakończ rozmowę.
-    7. WAŻNE: Gdy rozmowa jest zakończona:
-       a) Wygeneruj podsumowanie/transkrypcję rozmowy i użyj narzędzia `save_transcript` aby zapisać ją do pliku.
-       b) Dodaj na samym końcu swojej ostatniej wiadomości tag: [KONIEC].
+    7. WAŻNE: Gdy rozmowa jest zakończona, MUSISZ wywołać narzędzie `save_transcript`, aby zapisać transkrypcję.
+       - Transkrypcja MUSI być przekazana jako argument do narzędzia `save_transcript`.
+       - NIE umieszczaj transkrypcji w swojej odpowiedzi tekstowej do użytkownika.
+       - Twoja ostatnia wiadomość powinna być tylko podziękowaniem i pożegnaniem.
+       Format transkrypcji:
+          - Każda wiadomość w nowej linii, poprzedzona `AI: ` lub `Kandydat: `.
+          - Puste linie między wypowiedziami.
+          - Na końcu podsumowanie (stanowisko, data, itp.).
+          Przykład:
+          ```
+          {transcript_example}
+          ```
     """
 
     # Jeśli mamy historię (np. po restarcie serwera), dodajemy ją do kontekstu

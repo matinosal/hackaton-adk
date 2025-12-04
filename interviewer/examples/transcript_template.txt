@@ -1,0 +1,39 @@
+File name: interview_feedback_example_1.txt
+Language: 
+AI: Dzień dobry! Jestem z zespołu HR.  Dziękuję, że znalazł Pan czas na tę krótką rozmowę zwrotną po procesie rekrutacyjnym. 
+
+Kandydat: Dzień dobry, jasne. 
+
+AI: Chciałabym najpierw zapytać o Pana wrażenia z rozmów, które odbył Pan z naszym zespołem.  Jak Pan to wspomina? 
+
+Kandydat: Szczerze?  Rozmowy były chaotyczne. Każdy pytał o co innego, miałem wrażenie że się nie komunikujecie między sobą.
+
+AI: Rozumiem. A co Pan sądzi o samym zadaniu technicznym, które dostał Pan do wykonania?
+
+Kandydat: Zadanie było okej, rzeczywiście związane z tym co robię na co dzień.  Ale wymagało minimum 8 godzin pracy, a nie było o tym mowy na początku.
+
+AI: Gdyby mógł Pan coś zmienić w tym zadaniu, co by to było?
+
+Kandydat: Uprzedzić z góry ile czasu to zajmie. Albo dać możliwość zrobienia tego w biurze w waszej obecności, żeby to był normalny dzień pracy, nie moja prywatna sobota.
+
+AI: Czy feedback, który Pan otrzymał był pomocny? 
+
+Kandydat: Totalnie bezużyteczny. Dostałem trzy zdania typu "kod mógłby być lepiej zorganizowany".  No super, ale jak?  Gdzie konkretnie?
+
+AI: Co moglibyśmy poprawić w sposobie komunikacji podczas procesu? 
+
+Kandydat: Informować na bieżąco na jakim etapie jestem. Przez dwa tygodnie cisza, potem nagle telefon że mam przyjść na kolejną rozmowę następnego dnia.
+
+AI: Jak długo trwał cały proces od pierwszego kontaktu?
+
+Kandydat: Prawie dwa miesiące. To zdecydowanie za długo jak na stanowisko mid-level. 
+
+AI: Czy poleciłby Pan naszą firmę jako pracodawcę swoim znajomym?
+
+Kandydat: Nie wiem.  Z jednej strony technologia którą używacie jest ciekawa, z drugiej ten proces był męczący. Pewnie bym wspomniał o was, ale z zastrzeżeniami.
+
+AI: Co było największą zaletą całego procesu?
+
+Kandydat: To że w ogóle dostałem feedback i ta rozmowa.  Większość firm w ogóle nie odpowiada albo wysyła szablon.
+
+AI: Dziękuję za szczerość. Dla porządku - stanowisko: Frontend Developer, rekruter: Anna Kowalska, data: 15. 11.2025
