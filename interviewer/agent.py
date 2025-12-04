@@ -92,18 +92,22 @@ def create_interview_agent(scenario_data: dict, history_context: list = None):
     return Agent(model=MODEL, name="interview_agent", instruction=instruction, tools=[save_transcript])
 
 mock_scenario = {
-  "candidate_name": "Jan Kowalski",
-  "context": "Rozmowa feedbackowa po negatywnej decyzji rekrutacyjnej. Ton neutralny.",
-  "tone": "neutralny",
-  "key_questions": [
-    "Jakie są Pana/Pani ogólne wrażenia z procesu rekrutacji?",
-    "Czy coś w procesie było niejasne lub problematyczne?",
-    "Czy ma Pan/Pani jakieś sugestie dotyczące usprawnień procesu rekrutacji?",
-    "W skali od 1 do 5, jak ocenia Pan/Pani przebieg rozmowy rekrutacyjnej?"
-  ],
-  "session_id": "1f518253",
-  "created_at": "2025-12-03 11:32:14",
-  "status": "GENERATED"
+    "candidate_name": "Imię i Nazwisko Kandydata",
+    "context": "Krótki opis kontekstu rozmowy (np. stanowisko, etap rekrutacji, powód feedbacku)",
+    "tone": "Profesjonalny i uprzejmy",
+    "key_questions": [
+    "W skali 0-10, jak bardzo prawdopodobne jest, że polecił(a)byś udział w naszej rekrutacji znajomemu?",
+    "Czy zakres zadania rekrutacyjnego był adekwatny do stanowiska?",
+    "Czy czas potrzebny na wykonanie zadania był odpowiedni?",
+    "Czy otrzymałeś(-aś) jakościowy feedback po zadaniu?",
+    "Czy byłeś(-aś) na bieżąco informowany(-a) o statusie swojej aplikacji?",
+    "Czy informacje o wynagrodzeniu i benefitach były jasne od początku?",
+    "Czy czas oczekiwania na decyzję był akceptowalny?",
+    "Czy osoby rekrutujące były przygotowane do rozmowy (znały Twoje CV/profil)?",
+    "Czy pytania na różnych etapach były unikalne, czy się powtarzały?",
+    "Co w naszym procesie oceniasz jako mocną stronę?",
+    "Co powinniśmy poprawić w przyszłych rekrutacjach?"
+  ]
 }
 
 root_agent = create_interview_agent(mock_scenario)
