@@ -20,7 +20,7 @@ def save_transcript(transcript: str):
 
     try:
         gcs_service = GCSService(bucket_name=bucket_name)
-        filename = f"transcript_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
+        filename = f"transcriptions/transcript_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
         gcs_path = gcs_service.upload_string(transcript, filename, content_type="text/plain; charset=utf-8")
         return f"Zapisano transkrypcję do: {gcs_path}"
     except Exception as e:
