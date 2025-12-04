@@ -102,7 +102,7 @@ Poniżej znajduje się przykładowa struktura JSON, z którą będziesz pracowa�
 
 SEARCH_ENGINE_ID = os.getenv('SEARCH_ENGINE_ID')
 SEARCH_DATASTORE_ID = os.getenv('SEARCH_DATASTORE_ID')
-MODEL = "gemini-2.0-flash-001"
+MODEL = "gemini-3-pro-preview"
 AGENT_APP_NAME = 'analyst_agent'
 
 

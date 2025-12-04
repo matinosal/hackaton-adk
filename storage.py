@@ -152,13 +152,9 @@ def get_sessions_summary() -> list[list]:
     for data in scenarios:
         # W trybie Cloud Run URL musi być dynamiczny lub z env, 
         # ale dla uproszczenia zostawiamy localhost lub pobieramy BASE_URL
-        base_url = os.getenv("BASE_URL", "http://localhost:8000")
+        base_url = os.getenv("BASE_URL", "http://127.0.0.1:7861")
         
-        # Upewniamy się, że link wskazuje na /candidate
-        if not base_url.endswith("/candidate"):
-            link = f"{base_url}/candidate?id={data.get('session_id')}"
-        else:
-            link = f"{base_url}?id={data.get('session_id')}"
+        link = f"{base_url}/?id={data.get('session_id')}"
         
         sessions.append([
             data.get("session_id"),

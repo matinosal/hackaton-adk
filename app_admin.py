@@ -83,13 +83,9 @@ async def generate_link_logic(history):
             session_id = save_scenario(scenario_data)
             
             # Dynamiczny URL zależny od środowiska
-            # Domyślnie localhost:8000 dla uvicorn --reload, ale można nadpisać zmienną env
-            base_url = os.getenv("BASE_URL", "http://localhost:8000")
-            # Upewniamy się, że link wskazuje na /candidate
-            if not base_url.endswith("/candidate"):
-                link = f"{base_url}/candidate?id={session_id}"
-            else:
-                link = f"{base_url}?id={session_id}"
+            # Domyślnie http://127.0.0.1:7861 dla lokalnego uruchomienia app_candidac.py
+            base_url = os.getenv("BASE_URL", "http://127.0.0.1:7861")
+            link = f"{base_url}/?id={session_id}"
             
             return f"✅ Scenariusz zapisany!\nID Sesji: {session_id}\n\n🔗 LINK DLA KANDYDATA:\n{link}"
         except json.JSONDecodeError:
