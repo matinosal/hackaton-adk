@@ -1,6 +1,22 @@
 from google.adk.agents.llm_agent import Agent
+import datetime
+import os
 
 MODEL = "gemini-2.0-flash-001"
+
+def save_transcript(transcript: str):
+    """Zapisuje transkrypcję rozmowy do pliku.
+    
+    Args:
+        transcript: Pełna treść rozmowy do zapisania.
+    """
+    directory = "transcripts"
+    os.makedirs(directory, exist_ok=True)
+    filename = f"transcript_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
+    filepath = os.path.join(directory, filename)
+    with open(filepath, "w", encoding="utf-8") as f:
+        f.write(transcript)
+    return f"Zapisano transkrypcję do pliku: {filepath}"
 
 def create_interview_agent(scenario_data: dict, history_context: list = None):
     candidate_name = scenario_data.get("candidate_name", "Kandydacie")
@@ -24,7 +40,9 @@ def create_interview_agent(scenario_data: dict, history_context: list = None):
     4. To jest CZAT, a nie telefon. Nie pisz "dzwonię", "słyszę". Pisz "kontaktuję się", "piszę".
     5. Nie używaj żadnych technicznych tagów typu [CZEKAM_NA_ODPOWIEDŹ]. Po prostu zadaj pytanie.
     6. Po zadaniu wszystkich pytań (lub gdy kandydat chce kończyć) podziękuj i zakończ rozmowę.
-    7. WAŻNE: Gdy rozmowa jest zakończona, dodaj na samym końcu swojej ostatniej wiadomości tag: [KONIEC].
+    7. WAŻNE: Gdy rozmowa jest zakończona:
+       a) Wygeneruj podsumowanie/transkrypcję rozmowy i użyj narzędzia `save_transcript` aby zapisać ją do pliku.
+       b) Dodaj na samym końcu swojej ostatniej wiadomości tag: [KONIEC].
     """
 
     # Jeśli mamy historię (np. po restarcie serwera), dodajemy ją do kontekstu
@@ -47,7 +65,7 @@ def create_interview_agent(scenario_data: dict, history_context: list = None):
         [KONIEC HISTORII]
         """
     
-    return Agent(model=MODEL, name="interview_agent", instruction=instruction)
+    return Agent(model=MODEL, name="interview_agent", instruction=instruction, tools=[save_transcript])
 
 mock_scenario = {
     "candidate_name": "Jan Testowy",
